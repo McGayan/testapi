@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 const port = process.env.PORT || 3000;
-const my_val = process.env.MY_VAL_STR;
+const my_val = process.env.MY_VAL;
 
 dataString = "hello world2";
 
