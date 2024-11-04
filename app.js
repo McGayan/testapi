@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const my_val = process.env.MY_VAL;
 
-dataString = "hello world2";
+dataString = "hello world3";
 
 app.get("/", (req, res) => {
   res.send("Hello, Worlds!: Node:server\ndataString: \n" + dataString + "\nmy_val: " + my_val);
