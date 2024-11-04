@@ -38,7 +38,7 @@ jobs:
 
       - name: Run a script
         env:
-            COSMOS_CONNECTION_STRING: ${{ secrets.COSMOS_CONNECTION_STRING }}
+            MY_VAL_STR: ${{ secrets.MY_VAL }}
         run: |
             echo "Your connection string is: $COSMOS_CONNECTION_STRING"
             # Run your script or command that uses the connection string
