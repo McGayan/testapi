@@ -67,5 +67,4 @@ jobs:
           MY_VAL_STR: ${{ secrets.MY_VAL }}
         run: |
           # Example command to start the app
-          npm install
-          npm start
+          echo "The connection string is: $MY_VAL" # Avoid printing sensitive info in real scenarios
