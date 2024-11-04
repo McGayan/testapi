@@ -61,5 +61,11 @@ jobs:
           slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZ_MCX_WEBAPP }}
+
+      - name: 'Deploy to Azure'
         env:
           MY_VAL_STR: ${{ secrets.MY_VAL }}
+        run: |
+          # Example command to start the app
+          npm install
+          npm start
