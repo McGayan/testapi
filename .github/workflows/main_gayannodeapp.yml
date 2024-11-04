@@ -67,4 +67,4 @@ jobs:
           MY_VAL_STR: ${{ secrets.MY_VAL }}
         run: |
           # Example command to start the app
-          echo "The connection string is: $MY_VAL" # Avoid printing sensitive info in real scenarios
+          echo "The connection string is: $MY_VALgit" # Avoid printing sensitive info in real scenarios
