@@ -36,12 +36,6 @@ jobs:
           name: node-app
           path: release.zip
 
-      - name: Run a script
-        env:
-            MY_VAL_STR: ${{ secrets.MY_VAL }}
-        run: |
-            echo "Your connection string is: $COSMOS_CONNECTION_STRING"
-            # Run your script or command that uses the connection string
 
   deploy:
     runs-on: ubuntu-latest
@@ -67,3 +61,5 @@ jobs:
           slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZ_MCX_WEBAPP }}
+        env:
+          MY_VAL_STR: ${{ secrets.MY_VAL }}
