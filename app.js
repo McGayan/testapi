@@ -2,12 +2,13 @@ const express = require("express");
 
 const app = express();
 const port = process.env.PORT || 3000;
-const my_val = process.env.MY_VAL;
+
+const myVal = process.env.MY_VAL || "Secret not set";
 
 dataString = "hello world3";
 
 app.get("/", (req, res) => {
-  res.send("Hello, Worlds!: Node:server\ndataString: \n" + dataString + "\nmy_val: " + my_val);
+	res.send(`Hello world: Secret Value: ${myVal}`);
 });
 
 app.get("/keels", (req, res) => {

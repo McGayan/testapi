@@ -61,10 +61,5 @@ jobs:
           slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZ_MCX_WEBAPP }}
-
-      - name: 'Deploy to Azure'
         env:
           MY_VAL: ${{ secrets.MY_VAL }}
-        run: |
-          # Example command to start the app
-          echo "The connection string is: $MY_VAL" # Avoid printing sensitive info in real scenarios
