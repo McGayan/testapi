@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const myVal = process.env.MY_VAL || "Secret not set";
+const myVal = process.env.COSMOS_CONNECTION_STRING || "Secret not set";
 
 dataString = "hello world4";
 
