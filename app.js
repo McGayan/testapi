@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 const myVal = process.env.MY_VAL || "Secret not set";
 
-dataString = "hello world3";
+dataString = "hello world4";
 
 app.get("/", (req, res) => {
 	res.send(`Hello world: Secret Value: ${myVal}`);
@@ -21,5 +21,5 @@ app.get("/keels", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+	console.log(`Server is running on port ${port}`);
 });
